@@ -101,11 +101,14 @@ Each task gets its own stack to use. Once a task time is up, the system will int
 
 When a task finishes it will return from the bottom of the stack. This return value is saved in the last value of the stack. The stack will be deallocated and can be reused after a task has finished.
 
-* Process ID
+* Process IDs
+
 Each task receives a unique Id. This id can be used to get the current status of the task or to kill the task. The process ids are not reused unless there are more than MAX_PROCESSES have been created.
 
  * Maximum run time
+
 Every function will be guaranteed to be called every CYCLE_LENGTH microseconds. The run time of each task is dynamic, so that each task will run CYCLE_LENGTH divided by the (# of tasks). 
 
  * TimerA0
+
 The timerA0 interrupt is used to schedule the change of each task. This timer is set up to use the TA0CCTL0 interrupt.
