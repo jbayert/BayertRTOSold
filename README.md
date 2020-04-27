@@ -73,21 +73,20 @@ PROCESS_FINISHED_WITHOUT_ERRORS: process finished without any known errors
 ## Public Constants
 These can all be found in the RTOS.h file and could be changed by the user.
 
-*MAX_TASKS
+ * MAX_TASKS
 the maximum number of tasks that will be called.
 Default: 6 tasks
-*STACK_SIZE
+ * STACK_SIZE
 The maximum size (in words) of the stack of each function.
 Note that the stack size must also contain enough space for the 16 registers to be stored between stacks.
 Default: 40 words
-*CYCLE_LENGTH
+ * CYCLE_LENGTH
 How often each task will be called (in microseconds).
 Each task will run for CYCLE_LENGTH divided by (number of tasks)
 Default: 40000 microseconds
-*MAX_PROCESSES
+ * MAX_PROCESSES
 How many process ids might be created in a single run
 Default: 100
-
 
 ## Examples
 
