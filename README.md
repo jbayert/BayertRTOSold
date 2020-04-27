@@ -62,14 +62,13 @@ char process_state = get_proc_state(int process)
 
 Possible return values:
 
-** PROCESS_NOT_ALLOCATED
-process not defined yet
-** PROCESS_NOT_STARTED
-process has not started yet
-** PROCESS_RUNNING
-the process is running
-** PROCESS_FINISHED_WITHOUT_ERRORS
-process finished without any known errors
+PROCESS_NOT_ALLOCATED: process not defined yet
+
+PROCESS_NOT_STARTED: process has not started yet
+
+PROCESS_RUNNING: the process is running
+
+PROCESS_FINISHED_WITHOUT_ERRORS: process finished without any known errors
 
 ## Public Constants
 These can all be found in the RTOS.h file and could be changed by the user.
