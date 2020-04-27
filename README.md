@@ -15,4 +15,4 @@ This is a simple realtime operating system for the MSP430 microcontroller.
 
 Each task gets its own stack to use. Once a task time is up, the system will interrupt the task. The system will save the stack pointer and program counter, along with all the other registers. These values are saved onto the task’s stacks when other tasks are running. A typical stack for a task will look like this:
 
-![Image of Yaktocat](./blob/master/doc/TypicalStack.jpg)
+![Image of a Typical Stack](./doc/TypicalStack.jpg)
