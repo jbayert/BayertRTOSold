@@ -80,7 +80,6 @@ void killProccess(int proc_id){
             if(currently_running) {
                 RTOSrunReturn();//no stacks left
             }
-            }
         }else{
             if(task_num == numTask){//this is the last need to update
                 if(task_num==currTask) currTask--;
@@ -102,7 +101,7 @@ void killProccess(int proc_id){
         if(currently_running) {
             _BIS_SR(GIE);//enable interrupts again
         }
-
+    }
 }
 
 
