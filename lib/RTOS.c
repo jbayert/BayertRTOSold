@@ -101,7 +101,7 @@ void killProccess(int proc_id){
         if(currently_running) {
             _BIS_SR(GIE);//enable interrupts again
         }
-
+    }
 }
 
 
